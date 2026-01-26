@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+    box-sizing: border-box;
+    line-height: 2rem;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+}
+.main{
+    width: 100%;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+.home nav{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.home a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white
+}
+.home .heading h1{
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-size:10vw;
+    line-height: 1;
+    margin-left: 40px;
+}
+.home #secondh1{
+    margin-left: 130px;
+}
+.home .blocktext{
+    width: fit-content;
+}
+.home h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.home .subheading{
+    text-align: right;
+    padding: 0 3vw;
+}
+.subheading a{
+    display: block;
+}
+.home .heading-footer{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    gap: 31vw;
+    padding: 0 3vw;
+    position: absolute;
+    bottom: 2%;
+}
+.home .heading-footer .arrows{
+    display: flex;
+    gap: 0.3vw;
+}
+.home .heading-footer .arrows i{
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(170, 170, 170);
+    border-radius: 50%;
+    display: inline-flex;
+    color: #000000;
+    font-size: 18px;
+}
+.portfolio{
+    color: white;
+    justify-content: center;
+    padding-top: 200px;
+}
+.portfolio .elem{
+    width: 90%;
+    font-size: 4vw;
+    text-transform: uppercase;
+    border-top: 2px solid #8888;
+    opacity: 0.7;
+    padding: 3vw 0px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.portfolio .elem h5{
+    font-size: 20px;
+}
+.portfolio .elem:nth-last-child(1){
+    border-bottom: 2px solid #8888;
+}
+.portfolio .elem img{
+    position: absolute;
+    height: 140%;
+    display: none;
+}
+.portfolio .btn a{
+    margin-left: 4.5vw;
+    font-size: 0.9vw;
+    padding: 10px 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.company{
+    border-top: 2px solid #8888;
+    border-bottom: 2px solid #8888;
+    display: none;
+}
+.about{
+    display: flex;
+    padding: 10vw 13.5vw 10vw 33vw;
+    gap: 6vw;
+}
+.about img{
+    width: 15vw;
+}
+.about .text h4{
+    font-size: 0.8rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+.about .text p{
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+.about a{
+    font-size: 0.9vw;
+    padding: 10px 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.subscribe{
+    padding-left: 3.5vw;
+    padding-bottom: 5.5vw;
+    text-transform: uppercase;
+}
+.subscribe h6{
+    opacity: 0.7;
+    font-size: 0.7rem;
+}
+.subscribe a{
+    text-decoration: none;
+    color: white;
+    /* border-bottom: 1px solid white;
+    padding-bottom: 20px */
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5vw
+}
+.footer .left{
+    display: flex;
+    gap: 1.5vw;
+    font-weight: bold;
+}
+.footer a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    margin: 0 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
