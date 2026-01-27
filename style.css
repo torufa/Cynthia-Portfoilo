@@ -11,6 +11,29 @@ html,body{
     background-color: #000000;
     color: white;
 }
+.body{
+    position: relative;
+}
+.mouse-circle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 999999999 !important;
+    box-shadow: 1px 0px 14px 1px #ecf939b8;
+    position: fixed;
+    opacity: 0;
+}
+.bounding{
+    width: fit-content;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+.boundingelem{
+    transform: translateY(100%);
+}
+
 .main{
     width: 100%;
 }
@@ -20,22 +43,32 @@ html,body{
     color: white;
     position: relative;
 }
+.nav-box{
+    width: 100%;
+    height: 7%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
 .home nav{
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    transform: translateY(10%);
 }
 .home a{
     text-decoration: none;
     font-size: 22px;
     color: white
 }
+.home .heading{
+    margin-top: 5vw;
+}
 .home .heading h1{
     text-transform: uppercase;
-    opacity: 0.6;
     font-size:10vw;
     line-height: 1;
     margin-left: 40px;
+    opacity: 0.7;
 }
 .home #secondh1{
     margin-left: 130px;
@@ -48,12 +81,26 @@ html,body{
     text-transform: uppercase;
     font-size: 17px;
 }
+
 .home .subheading{
-    text-align: right;
-    padding: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
 }
-.subheading a{
-    display: block;
+.home .subheading .bound{
+    width: fit-content;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+
+}
+.subheading p{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: end;
+    transform: translateY(-100%);
+    opacity: 0;
 }
 .home .heading-footer{
     text-transform: uppercase;
@@ -63,6 +110,7 @@ html,body{
     padding: 0 3vw;
     position: absolute;
     bottom: 2%;
+    opacity: 0;
 }
 .home .heading-footer .arrows{
     display: flex;
@@ -104,9 +152,13 @@ html,body{
     border-bottom: 2px solid #8888;
 }
 .portfolio .elem img{
+    opacity: 0;
+    pointer-events: none;
+    height: 300%;
+    z-index: 99999;
     position: absolute;
-    height: 140%;
-    display: none;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
 }
 .portfolio .btn a{
     margin-left: 4.5vw;
